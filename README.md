@@ -1,2 +1,2 @@
-# nodestsrom
+# nodestrom
 Node.js utility package
