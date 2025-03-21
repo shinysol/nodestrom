@@ -6,6 +6,7 @@
     "declaration": true,
   },
   "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"],
   "references": [
     { "path": "../core" } // This ensures that nestjs depends on core
   ]

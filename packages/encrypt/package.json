@@ -21,6 +21,13 @@
       "types": "./dist/hs256/index.d.ts"
     }
   },
+  "typesVersions": {
+    "*": {
+      "sha256": [
+        "./dist/hs256/index.d.ts"
+      ]
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --build",

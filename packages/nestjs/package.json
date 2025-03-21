@@ -1,6 +1,6 @@
 {
   "name": "@nodestrom/nestjs",
-  "version": "0.0.20",
+  "version": "0.0.22",
   "description": "",
   "license": "MIT",
   "author": "",
@@ -32,7 +32,7 @@
     "prepublishOnly": "tsc --build"
   },
   "dependencies": {
-    "@nestjs/common": "^11.0.12",
+    "@nestjs/common": "^11.0.1",
     "@nestjs/swagger": "^11.0.7",
     "@nodestrom/array": "^0.0.1",
     "express": "^4.21.2",
