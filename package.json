@@ -1,0 +1,20 @@
+{
+  "name": "nodestrom",
+  "private": true,
+  "scripts": {
+    "publish:core": "npm version patch --workspace=@nodestrom/core && npm publish --workspace=@nodestrom/core",
+    "publish:string": "npm version patch --workspace=@nodestrom/string && npm publish --workspace=@nodestrom/string",
+    "publish:array": "npm version patch --workspace=@nodestrom/array && npm publish --workspace=@nodestrom/array",
+    "publish:object": "npm version patch --workspace=@nodestrom/object && npm publish --workspace=@nodestrom/object",
+    "publish:nestjs": "npm version patch --workspace=@nodestrom/nestjs && npm publish --workspace=@nodestrom/nestjs"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "lerna": "^8.2.1"
+  },
+  "author": "Renny H. Park",
+  "license": "MIT"
+}
