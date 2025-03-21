@@ -5,6 +5,8 @@
     "publish:core": "npm version patch --workspace=@nodestrom/core && npm publish --workspace=@nodestrom/core",
     "publish:string": "npm version patch --workspace=@nodestrom/string && npm publish --workspace=@nodestrom/string",
     "publish:array": "npm version patch --workspace=@nodestrom/array && npm publish --workspace=@nodestrom/array",
+    "publish:hash": "npm version patch --workspace=@nodestrom/hash && npm publish --workspace=@nodestrom/hash",
+    "publish:encrypt": "npm version patch --workspace=@nodestrom/encrypt && npm publish --workspace=@nodestrom/encrypt",
     "publish:object": "npm version patch --workspace=@nodestrom/object && npm publish --workspace=@nodestrom/object",
     "publish:nestjs": "npm version patch --workspace=@nodestrom/nestjs && npm publish --workspace=@nodestrom/nestjs"
   },

@@ -1,0 +1,35 @@
+{
+  "name": "@nodestrom/hash",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./sha256": {
+      "default": "./dist/sha256/index.js",
+      "import": "./dist/sha256/index.js",
+      "require": "./dist/sha256/index.js",
+      "types": "./dist/sha256/index.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "prepublishOnly": "tsc --build"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@nodestrom/core": "^0.0.1"
+  }
+}
