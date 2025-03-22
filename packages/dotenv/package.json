@@ -27,6 +27,7 @@
     "dist"
   ],
   "dependencies": {
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "@nodestrom/core": "^0.0.1"
   }
 }

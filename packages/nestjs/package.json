@@ -32,9 +32,10 @@
     "prepublishOnly": "tsc --build"
   },
   "dependencies": {
+    "@nodestrom/core": "^0.0.1",
+    "@nodestrom/array": "^0.0.1",
     "@nestjs/common": "^11.0.1",
     "@nestjs/swagger": "^11.0.7",
-    "@nodestrom/array": "^0.0.1",
     "express": "^4.21.2",
     "express-basic-auth": "^1.2.1"
   },

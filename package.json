@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "publish:core": "npm version patch --workspace=@nodestrom/core && npm publish --workspace=@nodestrom/core",
+    "publish:date": "npm version patch --workspace=@nodestrom/date && npm publish --workspace=@nodestrom/date",
     "publish:dotenv": "npm version patch --workspace=@nodestrom/dotenv && npm publish --workspace=@nodestrom/dotenv",
     "publish:string": "npm version patch --workspace=@nodestrom/string && npm publish --workspace=@nodestrom/string",
     "publish:array": "npm version patch --workspace=@nodestrom/array && npm publish --workspace=@nodestrom/array",
