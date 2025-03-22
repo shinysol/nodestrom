@@ -10,7 +10,8 @@
     "publish:hash": "npm version patch --workspace=@nodestrom/hash && npm publish --workspace=@nodestrom/hash",
     "publish:encrypt": "npm version patch --workspace=@nodestrom/encrypt && npm publish --workspace=@nodestrom/encrypt",
     "publish:object": "npm version patch --workspace=@nodestrom/object && npm publish --workspace=@nodestrom/object",
-    "publish:nestjs": "npm version patch --workspace=@nodestrom/nestjs && npm publish --workspace=@nodestrom/nestjs"
+    "publish:nestjs": "npm version patch --workspace=@nodestrom/nestjs && npm publish --workspace=@nodestrom/nestjs",
+    "publish:url": "npm version patch --workspace=@nodestrom/url && npm publish --workspace=@nodestrom/url"
   },
   "workspaces": [
     "packages/*"
