@@ -1,3 +1,8 @@
+/**
+ * Array item pusher
+ * @description
+ * Push items into Array
+ */
 function arrayPush<T>(target: T[], ...items: T[]) {
   if (target === undefined && items.every((item) => item === undefined)) {
     return undefined;

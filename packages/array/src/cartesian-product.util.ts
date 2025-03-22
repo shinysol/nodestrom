@@ -1,5 +1,7 @@
 /**
- * 카르테시안 곱
+ * Cartesian Product
+ * @description
+ * Generate internal cartesian product
  */
 function cartesianProduct(...arr: any[][]) {
   return arr.reduce((acc, cur) =>
