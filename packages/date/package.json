@@ -1,6 +1,6 @@
 {
-  "name": "@nodestrom/core",
-  "version": "0.0.1",
+  "name": "@nodestrom/date",
+  "version": "0.0.0",
   "description": "",
   "license": "MIT",
   "author": "",
@@ -25,5 +25,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "decimal.js": "^10.5.0"
+  }
 }
