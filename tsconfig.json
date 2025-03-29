@@ -1,19 +1,13 @@
 {
-    "compilerOptions": {
-        "composite": true,
-        // "target": "ES2020",
-        "module": "Node16",
-        "rootDir": "./packages",
-        "moduleResolution": "node16",
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "outDir": "./dist",
-        // "esModuleInterop": true,
-        // "forceConsistentCasingInFileNames": true,
-        // "strict": true,
-        // "skipLibCheck": true
-    },
-    // "include": ["packages/**/*.ts"],
-    "exclude": ["node_modules", "dist", "**/*spec.ts"]
+  "compilerOptions": {
+    "composite": true,
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "rootDir": "./packages",
+    "outDir": "./dist",
+  },
+  "exclude": ["node_modules", "dist", "**/*spec.ts"]
 }

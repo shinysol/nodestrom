@@ -1,11 +1,11 @@
-import { DateTime } from "./datetime/datetime.util";
-import { arrayBetweenDates } from "./array-between-dates.util";
-import { dateAdd } from "./date-add.util";
-import { dateChecker } from "./date-checker.util";
-import { dateFormat, dateFormatPreset } from "./date-format.util";
-import { datePaginator } from "./date-paginator.util";
-import { milliseconds } from "./millisecond.util";
-import { dateParse, Timezone } from "./parse.util";
+import { DateTime } from "./datetime/datetime.util.js";
+import { arrayBetweenDates } from "./array-between-dates.util.js";
+import { dateAdd } from "./date-add.util.js";
+import { dateChecker } from "./date-checker.util.js";
+import { dateFormat, dateFormatPreset } from "./date-format.util.js";
+import { datePaginator } from "./date-paginator.util.js";
+import { milliseconds } from "./millisecond.util.js";
+import { dateParse, Timezone } from "./parse.util.js";
 
 export {
   DateTime,

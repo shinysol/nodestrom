@@ -35,17 +35,17 @@ export function domainDetacher(
   if (modifiedDomain && url.indexOf(modifiedDomain) === 0) {
     return {
       domain: modifiedDomain,
-      path: url.replace(modifiedDomain, '').replace(queryMatch, ''),
+      path: url.replace(modifiedDomain, '').replace(queryMatch || '', ''),
     };
   } else if (!modifiedDomain && match) {
     return {
       domain: match[0],
-      path: url.replace(regexPattern, '').replace(queryMatch, ''),
+      path: url.replace(regexPattern, '').replace(queryMatch || '', ''),
     };
   } else {
     return {
       domain: null,
-      path: url.replace(queryMatch, ''),
+      path: url.replace(queryMatch || '', ''),
     };
   }
 }

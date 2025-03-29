@@ -1,29 +1,22 @@
 {
   "name": "@nodestrom/hash",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "",
   "license": "MIT",
+  "type": "module",
   "author": "",
-  "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./sha256": {
+      "types": "./dist/sha256/index.d.ts",
       "import": "./dist/sha256/index.js",
-      "require": "./dist/sha256/index.js",
-      "types": "./dist/sha256/index.d.ts"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "sha256": [
-        "./dist/sha256/index.d.ts"
-      ]
+      "require": "./dist/sha256/index.js"
     }
   },
   "scripts": {

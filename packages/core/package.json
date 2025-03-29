@@ -3,19 +3,15 @@
   "version": "0.0.1",
   "description": "",
   "license": "MIT",
-  "author": "",
-  "type": "commonjs",
+  "type": "module",
+  "author": "Renny H. Park",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
-    "./dist/*": null,
-    "./src/*": null,
-    "./node_modules/*": null,
     ".": {
-      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "scripts": {

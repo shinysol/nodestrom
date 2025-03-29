@@ -41,7 +41,7 @@ export function dateParse(
       parseInt(isoMatch[6], 10).toString().padStart(2, "0") || "00"
     }.${
       isoMatch[7] ? isoMatch[7].substring(1, 4).padEnd(3, "0") || "000" : "000"
-    }${isoMatch[8] || (options.timezone === "Asia/Seoul" ? "+09:00" : "")}`;
+    }${isoMatch[8] || (options?.timezone === "Asia/Seoul" ? "+09:00" : "")}`;
     return new Date(dateString);
   }
 

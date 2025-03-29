@@ -1,4 +1,4 @@
-import { DateTime } from './datetime/datetime.util';
+import { DateTime } from './datetime/datetime.util.js';
 
 export function arrayBetweenDates(
   from: string,

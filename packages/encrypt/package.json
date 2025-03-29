@@ -3,29 +3,25 @@
   "version": "0.0.1",
   "description": "",
   "license": "MIT",
-  "author": "",
-  "type": "commonjs",
+  "type": "module",
+  "author": "Renny H. Park",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./hs256": {
-      "default": "./dist/hs256/index.js",
+      "types": "./dist/hs256/index.d.ts",
       "import": "./dist/hs256/index.js",
-      "require": "./dist/hs256/index.js",
-      "types": "./dist/hs256/index.d.ts"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "sha256": [
-        "./dist/hs256/index.d.ts"
-      ]
+      "require": "./dist/hs256/index.js"
+    },
+    "./hs256/*": {
+      "types": "./dist/hs256/*/index.d.ts",
+      "import": "./dist/hs256/*/index.js",
+      "require": "./dist/hs256/*/index.js"
     }
   },
   "scripts": {

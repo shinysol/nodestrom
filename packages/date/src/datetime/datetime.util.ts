@@ -1,7 +1,7 @@
-import Decimal from "decimal.js";
-import { dateChecker } from "../date-checker.util";
-import { dateFormatPreset } from "../date-format.util";
-import { dateParse } from "../parse.util";
+import { Decimal } from "decimal.js";
+import { dateChecker } from "../date-checker.util.js";
+import { dateFormatPreset } from "../date-format.util.js";
+import { dateParse } from "../parse.util.js";
 
 export class DateTime {
   private _date = new Date();
@@ -37,10 +37,11 @@ export class DateTime {
       this._date = new Date(arg1 as Date);
     } else if (!arg2 && !arg3 && typeof arg1 === "string") {
       // 3#
-      this._date = dateParse(arg1);
-      if (this._date === null) {
-        return undefined;
+      const parsed = dateParse(arg1);
+      if (parsed === null) {
+        throw Error("parse error");
       }
+      this._date = parsed;
     }
   }
   getUTCString() {
@@ -137,6 +138,7 @@ export class DateTime {
   isLaterThan(date?: Date): boolean;
   isLaterThan(date?: string): boolean;
   isLaterThan(date?: Date | string | DateTime) {
+    if (!date) return undefined;
     const dateTime =
       date instanceof DateTime ? date ?? new DateTime() : new DateTime(date);
     return this._diff(dateTime).greaterThan(0);
@@ -147,6 +149,7 @@ export class DateTime {
   isLaterThanOrEqualTo(date: DateTime): boolean;
   isLaterThanOrEqualTo(date: string): boolean;
   isLaterThanOrEqualTo(date?: Date | string | DateTime) {
+    if (!date) return undefined;
     const dateTime =
       date instanceof DateTime ? date ?? new DateTime() : new DateTime(date);
     return this._diff(dateTime).greaterThanOrEqualTo(0);
@@ -157,6 +160,7 @@ export class DateTime {
   isBeforeThan(date?: DateTime): boolean;
   isBeforeThan(date?: string): boolean;
   isBeforeThan(date?: Date | string | DateTime) {
+    if (!date) return undefined;
     const dateTime =
       date instanceof DateTime ? date ?? new DateTime() : new DateTime(date);
     return this._diff(dateTime).lessThan(0);
@@ -167,6 +171,7 @@ export class DateTime {
   isBeforeThanOrEqualTo(date?: DateTime): boolean;
   isBeforeThanOrEqualTo(date?: string): boolean;
   isBeforeThanOrEqualTo(date?: Date | string | DateTime) {
+    if (!date) return undefined;
     const dateTime =
       date instanceof DateTime ? date ?? new DateTime() : new DateTime(date);
     return this._diff(dateTime).lessThanOrEqualTo(0);

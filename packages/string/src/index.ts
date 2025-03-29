@@ -1,3 +1,3 @@
-import { getUntilFirstSpace } from "./string.util";
+import { getUntilFirstSpace } from "./string.util.js";
 
 export { getUntilFirstSpace };

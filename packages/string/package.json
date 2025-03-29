@@ -3,28 +3,25 @@
   "version": "0.0.1",
   "description": "",
   "license": "MIT",
-  "author": "",
-  "type": "commonjs",
+  "type": "module",
+  "author": "Renny H. Park",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./encoding": {
-      "default": "./dist/encoding/index.js",
+      "types": "./dist/encoding/index.d.ts",
       "import": "./dist/encoding/index.js",
-      "require": "./dist/encoding/index.js",
-      "types": "./dist/encoding/index.d.ts"
+      "require": "./dist/encoding/index.js"
     },
-    "./encoding/base64": {
-      "default": "./dist/encoding/base64/index.js",
-      "import": "./dist/encoding/base64/index.js",
-      "require": "./dist/encoding/base64/index.js",
-      "types": "./dist/encoding/base64/index.d.ts"
+    "./encoding/*": {
+      "types": "./dist/encoding/*/index.d.ts",
+      "import": "./dist/encoding/*/index.js",
+      "require": "./dist/encoding/*/index.js"
     }
   },
   "scripts": {

@@ -1,4 +1,4 @@
-import { arrayChecker } from "./array-checker.util";
+import { arrayChecker } from "./array-checker.util.js";
 
 /** array sorter
  * @description

@@ -1,3 +1,3 @@
-import { domainAttacher } from "./domain-attacher";
-import { domainDetacher } from "./domain-detacher";
+import { domainAttacher } from "./domain-attacher.js";
+import { domainDetacher } from "./domain-detacher.js";
 export { domainAttacher, domainDetacher };

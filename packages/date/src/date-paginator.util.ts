@@ -1,4 +1,4 @@
-import { DateTime } from './datetime/datetime.util';
+import { DateTime } from './datetime/datetime.util.js';
 
 export function datePaginator(arg: {
   from: string;
@@ -6,7 +6,7 @@ export function datePaginator(arg: {
   page_no: number;
   limit: number;
   descending?: boolean;
-}): { from: string; to: string } {
+}): { from: string | undefined; to: string | undefined } {
   if (!arg) return { from: undefined, to: undefined };
   const { from, to, page_no, limit, descending } = arg;
   const pagedFirstDate = new DateTime(from)

@@ -1,3 +1,3 @@
-import { dotenvSafeConfig } from "./env-loaded.util";
+import { dotenvSafeConfig } from "./env-loaded.util.js";
 
 export { dotenvSafeConfig };

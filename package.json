@@ -1,8 +1,12 @@
 {
   "name": "nodestrom",
   "private": true,
+  "type": "module",
   "scripts": {
+    "reset": "npm run publish:core && npm run publish:date && npm run publish:dotenv && npm run publish:string && npm run publish:array && npm run publish:hash && npm run publish:encrypt && npm run publish:object && npm run publish:url",
+    "publish": "npm run publish:core && npm run publish:date && npm run publish:dotenv && npm run publish:string && npm run publish:array && npm run publish:hash && npm run publish:encrypt && npm run publish:object && npm run publish:url",
     "publish:core": "npm version patch --workspace=@nodestrom/core && npm publish --workspace=@nodestrom/core",
+    "unpublish:core": "npm unpublish --workspace=@nodestrom/core --force",
     "publish:date": "npm version patch --workspace=@nodestrom/date && npm publish --workspace=@nodestrom/date",
     "publish:dotenv": "npm version patch --workspace=@nodestrom/dotenv && npm publish --workspace=@nodestrom/dotenv",
     "publish:string": "npm version patch --workspace=@nodestrom/string && npm publish --workspace=@nodestrom/string",
@@ -10,7 +14,6 @@
     "publish:hash": "npm version patch --workspace=@nodestrom/hash && npm publish --workspace=@nodestrom/hash",
     "publish:encrypt": "npm version patch --workspace=@nodestrom/encrypt && npm publish --workspace=@nodestrom/encrypt",
     "publish:object": "npm version patch --workspace=@nodestrom/object && npm publish --workspace=@nodestrom/object",
-    "publish:nestjs": "npm version patch --workspace=@nodestrom/nestjs && npm publish --workspace=@nodestrom/nestjs",
     "publish:url": "npm version patch --workspace=@nodestrom/url && npm publish --workspace=@nodestrom/url"
   },
   "workspaces": [
