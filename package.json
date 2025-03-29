@@ -1,7 +1,6 @@
 {
   "name": "nodestrom",
   "private": true,
-  "type": "module",
   "scripts": {
     "reset": "npm run publish:core && npm run publish:date && npm run publish:dotenv && npm run publish:string && npm run publish:array && npm run publish:hash && npm run publish:encrypt && npm run publish:object && npm run publish:url",
     "publish": "npm run publish:core && npm run publish:date && npm run publish:dotenv && npm run publish:string && npm run publish:array && npm run publish:hash && npm run publish:encrypt && npm run publish:object && npm run publish:url",
